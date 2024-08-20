@@ -2,9 +2,7 @@ function orderNumber(A){
     let B = []; // [16, 1, 0, 4, 9]
     let C = [];
 
-    A.forEach(function(a) {
-        B.push(a * a);
-    });
+    B = A.map(a => a * a);
 
     let right = B.length-1; // 4
     let left = 0; // 0
@@ -23,23 +21,3 @@ function orderNumber(A){
 
 const A = [-4, -1, 0, 2, 3, 6];
 console.log(orderNumber(A));
-
-// const A = [-4, -1, 0, 2, 3] ;
-// let B; // [16, 1, 0, 4, 9]
-// let C;
-
-// foreach(a in A){
-//   B.push(a*a)
-// }
-
-// let right = B.lenght()-1; // 4
-// let left = 0; // 0
-// while(right != left){
-//   if(B[left]>B[right]){
-//     C.push(B[left]);
-//     left++;
-//   }else{
-//     C.push(right);
-//     right--;
-//   }
-// }
